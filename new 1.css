@@ -1,0 +1,125 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    border: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start; /* Align items to the top */
+    gap: 20px;
+    min-height: 100vh;
+    background-color: #fff;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 60%; /* Adjust width to take full space */
+    padding: 0 10px; /* Adjust padding to reduce space */
+    background-color: white;
+}
+
+.logo {
+    font-size: 30px;
+    font-weight: bold;
+    align-items: flex-start; /* Align items to the left */
+    text-align: left; /* Align text to the left */
+    width: 10%;
+}
+
+
+.highlight {
+    color: black;
+}
+
+.nav-links {
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+}
+
+.btn {
+    background-color: #00C4F0;
+    color: white;
+    padding: 10px 30px;
+    border-radius: 5px;
+    cursor: pointer;
+    align-self: flex-start; /* Align the button to the left */
+    margin-left: 10px; /* Adjust the value as needed */
+}
+
+/* Hero Section */
+.hero {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Align items to the left */
+    text-align: left; /* Align text to the left */
+    width: 60%;
+    gap: 0px;
+}
+
+
+.subheading {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.title {
+    font-size: 48px;
+    font-weight: bold;
+    color: black;
+}
+
+/* Cookie Bar */
+.cookie-bar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 10px;
+    width: 100%;
+    background: #f4f4f4;
+    position: fixed;
+    bottom: 0;
+}
+
+.cookie-bar p {
+    font-size: 14px;
+}
+
+.accept, .reject {
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.accept {
+    background-color: black;
+    color: white;
+}
+
+.reject {
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+}
+
+.read-more {
+    color: black;
+    text-decoration: none;
+}
+
+.large-text {
+    font-size: 100px; 
+    font-weight: bold;
+}
