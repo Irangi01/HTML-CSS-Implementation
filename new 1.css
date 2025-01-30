@@ -81,6 +81,35 @@ body {
     font-size: 100px;
     font-weight: bold;
 }
+.project-section {
+    width: 100%;
+    background-color: #5B7383;
+    text-align: center;
+    padding: 60px 20px;
+    color: white;
+}
+
+.project-subheading {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.project-title {
+    font-size: 48px;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.project-btn {
+    background-color: #00C4F0;
+    color: white;
+    padding: 15px 30px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    border: none;
+    margin-top: 20px;
+}
 
 /* Footer */
 .footer {
@@ -89,6 +118,9 @@ body {
     width: 100%;
     display: flex;
     justify-content: center;
+    text-align: left;
+    padding-left: 0; /* Remove any left padding */
+    margin-left: 0; 
 }
 
 .footer-container {
@@ -123,6 +155,7 @@ body {
     font-weight: bold;
     width: 100%; /* Ensure it takes full width */
     text-align: left; /* Align text to the left */
+    
 }
 .social-icons {
     display: flex;
