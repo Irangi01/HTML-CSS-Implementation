@@ -1,227 +1,379 @@
-* {
-    box-sizing: border-box;
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header Styling */
+.site-header__wrap {
+    background-color: #fff;
+    padding: 15px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+/* Container */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Header Elements */
+.site-header__elements {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Logo */
+.custom-logo {
+    height: 50px;
+}
+
+/* Navigation */
+.site-header__nav .menu {
+    list-style: none;
+    display: flex;
+    gap: 20px;
     padding: 0;
     margin: 0;
 }
 
-body {
-    font-family: Arial, sans-serif;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-start;
-    gap: 20px;
-    min-height: 100vh;
-    background-color: #fff;
+.site-header__nav .menu li {
+    display: inline;
 }
 
-/* Navbar */
-.navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 60%;
-    padding: 0 10px;
-    background-color: white;
-}
-
-.logo {
-    font-size: 30px;
-    font-weight: bold;
-    align-items: flex-start;
-    text-align: left;
-    width: 10%;
-}
-
-.highlight {
-    color: black;
-}
-
-.nav-links {
-    display: flex;
-    gap: 20px;
-}
-
-.nav-links a {
+.site-header__nav .menu li a {
     text-decoration: none;
-    color: black;
-    font-size: 16px;
+    color: #333;
+    font-weight: bold;
 }
 
-.btn {
-    background-color: #00C4F0;
+/* Call to Action */
+.site-header__cta .btn {
+    background-color: #007bff;
     color: white;
-    padding: 10px 30px;
-    border-radius: 5px;
-    cursor: pointer;
+    padding: 10px 20px;
+    border-radius: 3px;
+    text-decoration: none;
 }
 
-/* Hero Section */
-.hero {
+.site-header__cta .btn:hover {
+    background-color: #0056b3;
+}
+
+/* Mobile Menu */
+.site-header__mobile {
+    display: none;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .site-header__elements {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .site-header__nav .menu {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .site-header__mobile {
+        display: block;
+    }
+}
+.in-view__child--in {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+h5.in-view__child {
+    font-size: 18px;
+    color: black;
+    font-weight: bold;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+h1.display-one {
+    color: #222;
+    font-size: 42px;
+    line-height: 48px;
+    letter-spacing: -0.02em;
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    opacity: 1;
+    transform: none;
+    display: flex;
+    justify-content: center;
+}
+.section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 84px 0;
+}
+
+.reveal {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
-    text-align: left;
-    width: 60%;
-    gap: 0px;
-}
-
-.subheading {
+    align-items: center;
+    gap: 20px;
+    width: 690px;
+    max-width: 100%;
+    color: #222;
     font-size: 16px;
-    font-weight: bold;
+    line-height: 24px;
+    font-family: "Karla", sans-serif;
+    font-weight: 400;
+    -webkit-font-smoothing: antialiased;
 }
 
-.title {
-    font-size: 48px;
-    font-weight: bold;
-    color: black;
-}
-
-.large-text {
-    font-size: 100px;
-    font-weight: bold;
-}
-.project-section {
+.reveal__frame {
+    display: flex;
+    justify-content: center;
     width: 100%;
-    background-color: #5B7383;
+}
+
+.reveal__background {
+    width: 100%;
+    height: 300px;
+    background-size: cover;
+    background-position: center;
+}
+
+.reveal__title {
+    font-size: 24px;
+    font-weight: bold;
     text-align: center;
-    padding: 60px ;
-    color: white;
+    display: flex;
+    justify-content: center;
 }
 
-.project-subheading {
-    font-size: 18px;
-    font-weight: bold;
+.reveal__copy {
+    display: flex;
+    justify-content: center;
+    text-align: center;
 }
 
-.project-title {
-    font-size: 48px;
-    font-weight: bold;
-    margin: 10px 0;
+.reveal__content {
+    max-width: 600px;
+}
+.section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 84px;
+    padding-bottom: 84px;
 }
 
-.project-btn {
-    background-color: #00C4F0;
-    color: white;
-    padding: 15px 30px;
+.testimonials {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 690px;
+    font-family: "Karla", sans-serif;
+    color: #222;
     font-size: 16px;
-    border-radius: 5px;
-    cursor: pointer;
-    border: none;
-    margin-top: 20px;
+    line-height: 24px;
+    font-weight: 400;
+    -webkit-font-smoothing: antialiased;
 }
 
-/* Footer */
-.footer {
-    background-color: #e5ecf4;
-    padding: 150px 40px;
+.carousel__frame {
+    display: flex;
+    overflow: hidden;
+    cursor: -webkit-grab;
+    height: 308px;
+}
+
+.carousel__items {
+    display: flex;
+    transition: 500ms;
+}
+
+.carousel__item {
+    flex: 0 0 33.3333%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.carousel__image {
     width: 100%;
     display: flex;
     justify-content: center;
-    text-align: left;
-    padding-left: 0; /* Remove any left padding */
-    margin-left: 0; 
 }
 
-.footer-container {
-    display: grid;
-    grid-template-columns: repeat(6, 1fr);
-    gap: 20px;
-    width: 80%;
-    
+.poster figure {
+    display: flex;
+    justify-content: center;
 }
 
-.footer-section h3 {
+.poster--cover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.carousel__copy {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.carousel__dots {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+}
+
+.carousel__dots span {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: #ccc;
+    transition: 0.6s cubic-bezier(0.68, -1, 0.27, 2);
+}
+
+.carousel__dots .active {
+    background-color: #007cba;
+}
+.sponsors {
+            text-align: center;
+            padding: 40px 20px;
+        }
+
+        .sponsors h3 {
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+
+        .sponsors-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .company {
+            width: 22%; /* 4 in a row */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .company img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        @media (max-width: 992px) {
+            .company {
+                width: 30%; /* 3 in a row on smaller screens */
+            }
+        }
+
+        @media (max-width: 768px) {
+            .company {
+                width: 45%; /* 2 in a row on tablets */
+            }
+        }
+
+        @media (max-width: 480px) {
+            .company {
+                width: 90%; /* 1 per row on mobile */
+            }
+        }
+
+body {
+    -webkit-text-size-adjust: 100%;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    --wp-admin-theme-color: #007cba;
+    --wp-admin-theme-color-darker-10: #006ba1;
+    --wp-admin-theme-color-darker-20: #005a87;
+    color: #222;
     font-size: 16px;
+    line-height: 24px;
+    -webkit-font-smoothing: antialiased;
+    font-family: "Karla", sans-serif;
+    font-weight: 400;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.wp-block-pixudio-instagram {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 20px;
+}
+
+.section {
+    padding-bottom: 20px;
+}
+
+.text-center {
+    font-size: 24px;
     font-weight: bold;
     margin-bottom: 10px;
 }
 
-.footer-section ul {
-    list-style: none;
+.sub-head {
+    font-size: 18px;
+    color: #666;
 }
 
-.footer-section ul li {
-    margin-bottom: 5px;
-}
-
-.footer-section ul li a {
-    text-decoration: none;
-    color: black;
-    font-size: 14px;
-}
-.footer .logo {
-    font-size: 30px;
-    font-weight: bold;
-    width: 100%; /* Ensure it takes full width */
-    text-align: left; /* Align text to the left */
-    
-}
-.social-icons {
+.instagram-feed {
     display: flex;
-    gap: 10px;
-    margin-top: 10px;
-}
-
-.social-icons img {
-    width: 20px;
-    height: 20px;
-}
-
-.contact p {
-    font-size: 14px;
-    font-weight: bold;
-}
-.strategy-section {
-    width: 60%;
-    background: url('4.jpg') no-repeat center;
-    background-size: cover;
-    padding: 80px;
-    color: white;
-    position: relative;
-}
-
-.strategy-section::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.5); /* Dark overlay */
-}
-
-.strategy-title {
-    font-size: 48px;
-    font-weight: bold;
-    z-index: 1;
-    position: relative;
-}
-
-.strategy-text {
-    font-size: 16px;
-    line-height: 1.5;
-    z-index: 1;
-    position: relative;
-}
-.brands-section {
-    text-align: center;
-    margin-top: 50px;
-}
-
-.brands-section img {
-    max-width: 100%;
-    height: auto;
-}
-.image-container {
-    display: flex;
+    flex-wrap: wrap;
     justify-content: center;
-    align-items: center;
-    width: 100%;
-    margin-top: 30px; /* Adjust spacing as needed */
+    gap: 15px;
 }
 
-.image-container img {
-    max-width: 80%; /* Adjust width if necessary */
+.insta-item {
+    flex: 1 1 calc(25% - 15px); /* 4 items in one row */
+    max-width: calc(25% - 15px);
+}
+
+.insta-item img {
+    width: 100%;
     height: auto;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+/* Responsive design */
+@media (max-width: 1024px) {
+    .insta-item {
+        flex: 1 1 calc(33.33% - 15px);
+        max-width: calc(33.33% - 15px);
+    }
+}
+
+@media (max-width: 768px) {
+    .insta-item {
+        flex: 1 1 calc(50% - 15px);
+        max-width: calc(50% - 15px);
+    }
+}
+
+@media (max-width: 480px) {
+    .insta-item {
+        flex: 1 1 100%;
+        max-width: 100%;
+    }
 }
