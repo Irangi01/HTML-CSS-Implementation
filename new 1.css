@@ -100,8 +100,8 @@ h5.in-view__child {
 
 h1.display-one {
     color: #222;
-    font-size: 42px;
-    line-height: 48px;
+    font-size: 50px;
+    line-height: 50px;
     letter-spacing: -0.02em;
     font-family: "Poppins", sans-serif;
     font-weight: 700;
@@ -109,6 +109,7 @@ h1.display-one {
     transform: none;
     display: flex;
     justify-content: center;
+    
 }
 .section {
     display: flex;
